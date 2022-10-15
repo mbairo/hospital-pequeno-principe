@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="layout_input_user_password">
+        <item name="android:background">@drawable/layout_input_user_password</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:maxLength">50</item>
+    </style>
+
+    <style name="btn_action">
+        <item name="android:background">@drawable/btn_action</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="cards">
+        <item name="android:background">@drawable/btn_action</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+    </style>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "595719931773",
+    "project_id": "hospital-pequeno-princip-281bd",
+    "storage_bucket": "hospital-pequeno-princip-281bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595719931773:android:0c9d80e1082996496aee14",
+        "android_client_info": {
+          "package_name": "com.mbairo.hospitalpequenoprincipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595719931773-6tk428bu70vpp8bmt2nq37ql3bq86o6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCjc8ovh0M_sSAF7X5xKdO4hm-E7IgSxY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595719931773-6tk428bu70vpp8bmt2nq37ql3bq86o6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

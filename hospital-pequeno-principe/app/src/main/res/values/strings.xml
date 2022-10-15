@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Hospital Pequeno Principe</string>
+
+    <string name="splashScrreen_Hospital">Hospital</string>
+    <string name="splashScrreen_PequenoPrincipe">Pequeno Principe</string>
+    <string name="pos_consulta">Pós Consulta</string>
+    <string name="emergencia">Emergência</string>
+    <string name="unidades">Unidades</string>
+    <string name="doacao">Doação</string>
+    <string name="telemedicina">Telemedicina</string>
+    <string name="voluntariado">Voluntariado</string>
+    <string name="quemSomos">Quem Somos</string>
+    <string name="entrar">Entrar</string>
+    <string name="novo_usuario">Novo usuário? Click aqui</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="sair">Sair</string>
+
+
+    <string name="controleMedicamentos">Controle de Medicamentos</string>
+    <string name="sintomas_titulo">Como está se sentindo hoje?</string>
+    <string name="sintomas_subtitulo">Informe os dados abaixo para a pré avaliação</string>
+    <string name="febre">Febre</string>
+    <string name="graus">Graus:</string>
+    <string name="dor">Dor</string>
+    <string name="dorFraca">Fraca</string>
+    <string name="dorForte">Forte</string>
+    <string name="pressaoArterial">Pressão arterial:</string>
+    <string name="infoPressao">Ex: 12x8</string>
+    <string name="enviarImagens">Anexar Imagens</string>
+    <string name="ataduraPontos">Problemas na atadura/pontos?</string>
+    <string name="ataduraPontosSim">Sim</string>
+    <string name="ataduraPontosNao">Não</string>
+    <string name="enviar">Analisar Formulário</string>
+</resources>
