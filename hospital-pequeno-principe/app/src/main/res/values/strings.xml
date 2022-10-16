@@ -16,6 +16,9 @@
     <string name="cadastrar">Cadastrar</string>
     <string name="sair">Sair</string>
 
+    <string name="home">Home</string>
+    <string name="menu">Menu</string>
+
 
     <string name="controleMedicamentos">Controle de Medicamentos</string>
     <string name="sintomas_titulo">Como está se sentindo hoje?</string>
@@ -32,4 +35,6 @@
     <string name="ataduraPontosSim">Sim</string>
     <string name="ataduraPontosNao">Não</string>
     <string name="enviar">Analisar Formulário</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

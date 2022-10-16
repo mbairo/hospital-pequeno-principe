@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E5DE"
+    tools:context=".fragments.SintomasFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sintomas_titulo"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textColor="@color/purple_700"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toBottomOf="@+id/box_img"
+                app:layout_constraintEnd_toStartOf="@+id/box_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/box_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sintomas_checklist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/textTitulo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_subtitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/sintomas_subtitulo"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/box_img" />
+
+            <View
+                android:id="@+id/viewFebre"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.401"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_subtitulo" />
+
+            <Switch
+                android:id="@+id/switchFebre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:text="@string/febre"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewFebre"
+                app:layout_constraintStart_toStartOf="@+id/viewFebre"
+                app:layout_constraintTop_toBottomOf="@+id/text_subtitulo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@android:color/holo_green_dark"
+                app:hintTextColor="@android:color/holo_green_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/switchFebre"
+                app:layout_constraintTop_toTopOf="@+id/viewFebre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_edit_text_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Quantos Graus?"
+                    android:textSize="17dp"
+                    android:inputType="number"
+                    android:textColorHighlight="@color/black"
+                    android:textColorLink="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--     parte 2       -->
+            <View
+                android:id="@+id/viewDor"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.401"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewFebre" />
+
+            <Switch
+                android:id="@+id/switchDor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:text="@string/dor"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewDor"
+                app:layout_constraintStart_toStartOf="@+id/viewDor"
+                app:layout_constraintTop_toBottomOf="@+id/viewFebre" />
+
+            <CheckBox
+                android:id="@+id/checkBoxFraca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/dorFraca"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewDor"
+                app:layout_constraintStart_toEndOf="@+id/switchDor"
+                app:layout_constraintTop_toTopOf="@+id/viewDor" />
+
+            <CheckBox
+                android:id="@+id/checkBoxForte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/dorForte"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewDor"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxFraca"
+                app:layout_constraintTop_toTopOf="@+id/viewDor" />
+
+            <!--      Pressão Arterial      -->
+            <View
+                android:id="@+id/viewPressao"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewDor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/pressaoArterial"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/input_layout_pressao"
+                app:layout_constraintEnd_toStartOf="@+id/input_layout_pressao"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="@+id/viewPressao"
+                app:layout_constraintTop_toBottomOf="@+id/viewDor"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_pressao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:textSize="17dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@android:color/holo_green_dark"
+                app:hintTextColor="@android:color/holo_green_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewDor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_edit_text_Pressao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Quantos Graus?"
+                    android:inputType="number"
+                    android:textColorHighlight="@color/black"
+                    android:textColorLink="@color/black"
+                    android:textSize="17dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
