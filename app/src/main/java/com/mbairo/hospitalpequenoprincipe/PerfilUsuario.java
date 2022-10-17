@@ -17,8 +17,9 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class PerfilUsuario extends AppCompatActivity {
 
-    private TextView nomeUsuario, emailUsuario;
+    private TextView nomeUsuario, emailUsuario, textView_sobre_o_app;
     private TextView btn_sair;
+
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String userID;
 
@@ -63,6 +64,7 @@ public class PerfilUsuario extends AppCompatActivity {
     private void BuscarElementos () {
         nomeUsuario = findViewById(R.id.textNomeUsuario);
         emailUsuario = findViewById(R.id.textEmailUsuario);
+        textView_sobre_o_app = findViewById(R.id.textView_sobre_o_app);
         btn_sair = findViewById(R.id.btn_sair);
     }
 }

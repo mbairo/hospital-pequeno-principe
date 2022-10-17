@@ -19,6 +19,8 @@
     <string name="home">Home</string>
     <string name="menu">Menu</string>
     <string name="perfil">Perfil</string>
+    <string name="sobreOApp">Sobre o App</string>
+    <string name="sobreOAppETODO">Sobre o App E funcionalidades futuras</string>
 
 
     <string name="controleMedicamentos">Controle de Medicamentos</string>
@@ -36,6 +38,12 @@
     <string name="ataduraPontosSim">Sim</string>
     <string name="ataduraPontosNao">Não</string>
     <string name="enviar">Analisar Formulário</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sobre">App não oficial, criado apenas para demostar ao Hopital Pequeno Pricipe um esboço do que poderia ser um app com algumas funções básicas no geral mas com foco na pós consulta\n
+       - Futuras funções:\n
+       - Criar um carrossel de imagens no menú HOME, com enfase as realizações do H.P.P com foco em doações\n
+       - Ajustar fontes e cor\n
+       - Add funções nos demais botões...
+    </string>
+
 </resources>
