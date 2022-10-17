@@ -81,7 +81,7 @@ public class FormLogin extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            PerfilUsuario();
+                            GoHome();
                         }
                     }, 1000);
                 }  else {
@@ -99,8 +99,8 @@ public class FormLogin extends AppCompatActivity {
             }
         });
     }
-    private void  PerfilUsuario() {
-        Intent intent = new Intent(FormLogin.this, PerfilUsuario.class);
+    private void  GoHome() {
+        Intent intent = new Intent(FormLogin.this, Home.class);
         startActivity(intent);
         finish();
     }
@@ -112,7 +112,7 @@ public class FormLogin extends AppCompatActivity {
         FirebaseUser usuarioLogado = FirebaseAuth.getInstance().getCurrentUser();
 
         if (usuarioLogado != null) {
-            PerfilUsuario();
+            GoHome();
         }
     }
 }

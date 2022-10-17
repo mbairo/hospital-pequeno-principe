@@ -270,16 +270,32 @@
         </androidx.cardview.widget.CardView>
     </GridLayout>
 
+    <Button
+        android:id="@+id/btn_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view4"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/WhiteSmoke"
+        android:text="@string/perfil"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
     <View
         android:id="@+id/view4"
         android:layout_width="match_parent"
-        android:layout_height="205dp"
-        android:layout_below="@+id/gridLayout"
+        android:layout_height="134dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="6dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="3dp" />
 </RelativeLayout>
