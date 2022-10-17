@@ -91,7 +91,7 @@
                 app:layout_constraintTop_toTopOf="@+id/viewFebre">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/input_edit_text_phone"
+                    android:id="@+id/input_edit_text_graus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Quantos Graus?"
@@ -155,22 +155,21 @@
                 app:layout_constraintTop_toBottomOf="@id/viewDor" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginBottom="24dp"
+                android:layout_width="137dp"
+                android:layout_height="42dp"
                 android:text="@string/pressaoArterial"
                 android:textSize="17dp"
                 app:layout_constraintBottom_toBottomOf="@+id/input_layout_pressao"
                 app:layout_constraintEnd_toStartOf="@+id/input_layout_pressao"
-                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/viewPressao"
                 app:layout_constraintTop_toBottomOf="@+id/viewDor"
                 app:layout_constraintVertical_bias="1.0" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_pressao"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="333dp"
+                android:layout_height="57dp"
                 android:layout_marginStart="200dp"
                 android:textSize="17dp"
                 app:boxBackgroundColor="@color/white"
@@ -184,7 +183,7 @@
                     android:id="@+id/input_edit_text_Pressao"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Quantos Graus?"
+                    android:hint="Ex: 12x8"
                     android:inputType="number"
                     android:textColorHighlight="@color/black"
                     android:textColorLink="@color/black"
