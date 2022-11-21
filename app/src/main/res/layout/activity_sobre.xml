@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Sobre">
+
+    <TextView
+        android:id="@+id/title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/menu"
+        android:textColor="@color/WhiteSmoke"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_logo_esquerda"
+        android:layout_width="150dp"
+        android:layout_height="162dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toStartOf="@+id/title_menu"
+        tools:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/img_logo_direita"
+        android:layout_width="150dp"
+        android:layout_height="166dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/title_menu"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView_sobre"
+        android:layout_width="300dp"
+        android:layout_height="512dp"
+        android:layout_below="@+id/title_menu"
+        android:layout_alignEnd="@+id/img_logo_direita"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="33dp"
+        android:text="@string/sobre" />
+
+
+</RelativeLayout>

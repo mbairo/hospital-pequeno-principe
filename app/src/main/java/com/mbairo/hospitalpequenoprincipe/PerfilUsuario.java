@@ -3,6 +3,7 @@ package com.mbairo.hospitalpequenoprincipe;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -19,6 +20,7 @@ public class PerfilUsuario extends AppCompatActivity {
 
     private TextView nomeUsuario, emailUsuario, textView_sobre_o_app;
     private TextView btn_sair;
+    private Button btn_sobre;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String userID;
@@ -35,6 +37,16 @@ public class PerfilUsuario extends AppCompatActivity {
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(PerfilUsuario.this, FormLogin.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        btn_sobre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(PerfilUsuario.this, Sobre.class);
                 startActivity(intent);
                 finish();
             }
@@ -66,5 +78,6 @@ public class PerfilUsuario extends AppCompatActivity {
         emailUsuario = findViewById(R.id.textEmailUsuario);
         textView_sobre_o_app = findViewById(R.id.textView_sobre_o_app);
         btn_sair = findViewById(R.id.btn_sair);
+        btn_sobre = findViewById(R.id.btn_sobre);
     }
 }
